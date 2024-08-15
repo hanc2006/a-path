@@ -56,6 +56,7 @@ describe('a-path', () => {
 
     describe('Path.Of<T, R>', () => {
       it('should list all number paths in an object', () => {
+        Path
         expectTypeOf<Path.Of<Item, number>>().toEqualTypeOf<'b' | 'a.b.c'>();
       });
 
